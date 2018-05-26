@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/returns" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="最高分"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="排行榜"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.14">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="56dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/easy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/easy_label" />
+
+                        <TextView
+                            android:id="@+id/text_easy_backup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/easy_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/easy_label" />
+
+                        <TextView
+                            android:id="@+id/text_easy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/normal_label" />
+
+                        <TextView
+                            android:id="@+id/text_normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/diffcult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/diffcult_label" />
+
+                        <TextView
+                            android:id="@+id/text_diffcult"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="267dp"
+            android:layout_height="203dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_ranking"
+                android:layout_width="264dp"
+                android:layout_height="201dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal"
+                    android:padding="1dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <RadioButton
+                            android:id="@+id/btn_jiandan"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:button="@null"
+                            android:text="简单"
+                            android:textColor="#FF0000"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/btn_yiban"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:button="@null"
+                            android:text="一般"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/btn_kunnan"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="20dp"
+                            android:button="@null"
+                            android:text="困难"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup"
+                    android:layout_centerHorizontal="true"></ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
